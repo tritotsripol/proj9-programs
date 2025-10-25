@@ -65,7 +65,7 @@ body {
   margin: 0;
 }
 .title-box {
-  background: linear-gradient(to bottom, #00ff91, #00c069);
+  background: linear-gradient(to bottom, #00d07680, #00ff9140);
   border-radius: 25px;
   width: content-box;
   height: auto;
@@ -94,36 +94,36 @@ h2 {
   transition: transform 0.5s ease;
 }
 .green-block {
-  background: linear-gradient(to bottom, #00000000, #00ff9120);
-  color: #00ff91;
+  background: linear-gradient(to bottom, #00d07680, #00ff9140);
+  color: white
 }
 .blue-block {
-  background: linear-gradient(to bottom, #00000000, #00b3c020);
-  color: #00ffe1;
+  background: linear-gradient(to bottom, #009bfb80, #009bfb40);
+  color: white;
 }
 .green-block:hover h2, .blue-block:hover h2 {
   letter-spacing: 5px;
 }
 .green-block::-webkit-scrollbar {
-  background: #00ff9140;
+  background: #00d07640;
   border-radius: 25px;
   width: 15px;
   height: 15px;
 }
 .blue-block::-webkit-scrollbar {
-  background: #00b3c020;
+  background: #009bfb20;
   border-radius: 25px;
   width: 15px;
   height: 15px;
 }
 .green-block::-webkit-scrollbar-thumb {
-  background: #00ff91cc;
+  background: #00d076cc;
   border-radius: 25px;
   width: 50%;
   height: 15px;
 }
 .blue-block::-webkit-scrollbar-thumb {
-  background: #00b3c0cc;
+  background: #009bfbcc;
   border-radius: 25px;
   width: 50%;
   height: 15px;
@@ -143,15 +143,10 @@ h2 {
   color: white;
   font-weight: 300;
 }
-.greensec > div > div{
+.greensec > div > div, .bluesec > div > div {
   display: grid;
   padding: 0.5em;
-  border-bottom: 1px solid #00ff9120;
-}
-.bluesec > div > div{
-  display: grid;
-  padding: 0.5em;
-  border-bottom: 1px solid #00b3c020;
+  border-bottom: 1px solid #ffffff40;
 }
 .greensec > div > div:last-child, .bluesec > div > div:last-child {
   border-bottom: none;
@@ -163,20 +158,21 @@ h2 {
   transition: font-size 0.5s ease;
 }
 .scroll-container > section > div {
-  background: linear-gradient(to bottom, #00000000, #00b3c020);
-  color: #00ffe1;
+  background: linear-gradient(to bottom, #009bfb80, #009bfb40);
+  color: white;
   width: 200px;
   height: 200px;
   border-radius: 25px;
   padding: 15px;
   position: relative;
-  transition: width 0.5s ease !important;
+  transition: width 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
 }
 .scroll-container > section > div:hover {
   width: 300px;
 }
 .scroll-container:hover > section > div:not(:hover) {
-  opacity: 50%;
+  opacity: 25%;
+  filter: blur(0.5px);
 }
 .scroll-container > section > div:hover div:first-child {
   font-size: 36px;
@@ -186,7 +182,8 @@ h2 {
 }
 .scroll-container > section > div > a {
   text-decoration: none;
-  color: #00ffe1;
+  color: white;
+  opacity: 0.5;
   font-size: 12px;
   font-weight: 300;
   cursor: pointer;
@@ -262,7 +259,7 @@ backdrop-filter: blur(5px);
 border-top-right-radius: 25px;
 border-bottom-right-radius: 25px;
 border: solid 1px black;
-box-shadow:0 0 5px #00ff9180;
+box-shadow:0 0 5px #00d07680;
 transition: background-color 1s ease, box-shadow 1s ease;
 }
 .gotop:hover {
@@ -288,7 +285,7 @@ backdrop-filter: blur(5px);
 border-top-left-radius: 25px;
 border-bottom-left-radius: 25px;
 border: solid 1px black;
-box-shadow:0 0 5px #00ff9180;
+box-shadow:0 0 5px #00d07680;
 transition: background-color 1s ease, color 1s ease, box-shadow 1s ease;
 }
 .sectionbtn:hover {
@@ -328,7 +325,7 @@ height: 3em ;
 background-color: rgba(0,0,0,0.5);
 backdrop-filter: blur(5px);
 border: solid 1px black;
-box-shadow:0 0 5px #00ff9180;
+box-shadow:0 0 5px #00d07680;
 transition: background-color 1s ease, color 1s ease, box-shadow 1s ease;
 }
 .themebtn:hover {
@@ -362,13 +359,13 @@ height: 15px;
     background: rgba(255,255,255, 0.5);
   }
   body.light::-webkit-scrollbar-thumb {
-    background: #00a86280;
+    background: #00d07680;
   }
   
   body.light .gotop, body.light .themebtn {
     background-color: rgba(255,255,255,0.5);
     border: solid 1px white;
-    box-shadow:0 0 5px #00ff9180;
+    box-shadow:0 0 5px #00c97280;
     transition: background-color 1s ease, box-shadow 1s ease;
   }
   body.light .gotop:hover, body.light .themebtn:hover {
@@ -382,7 +379,7 @@ height: 15px;
   body.light .sectionbtn {
     background-color: rgba(255,255,255,0.5);
     border: solid 1px white;
-    box-shadow:0 0 5px #00ff9180;
+    box-shadow:0 0 5px #00c97280;
     transition: background-color 1s ease, color 1s ease, box-shadow 1s ease;
   }
   body.light .sectionbtn:hover {
@@ -427,59 +424,32 @@ height: 15px;
     color: white;
   }
 
-  /* Light Theme */
+/* Light */
 body.light {
-  background-color: #d5ffed;
+  background-color: #c0ffe3;
 }
-
+body.light .title-box {
+  background: linear-gradient(to bottom, #00c972a0, #00c972);
+}
 body.light .green-block {
-  background: linear-gradient(to bottom, #ffffff00, #00ff9125);
-  color: #00a862;
+  background: linear-gradient(to bottom, #00c972a0, #00c972);
 }
-
 body.light .blue-block {
-  background: linear-gradient(to bottom, #ffffff00, #0088a025);
-  color: #0088a0;
+  background: linear-gradient(to bottom, #009bfba0, #009bfb);
 }
-
 body.light .green-block::-webkit-scrollbar {
-  background: #00ff9120;
+  background: #ffffffa0;
 }
-
 body.light .blue-block::-webkit-scrollbar {
-  background: #0088a020;
+  background: #ffffffa0;
 }
-
 body.light .green-block::-webkit-scrollbar-thumb {
-  background: #00a862;
+  background: #00c97280;
 }
-
 body.light .blue-block::-webkit-scrollbar-thumb {
-  background: #0088a0;
+  background: #009bfb80;
 }
-
-body.light .greensec > div > div:not(:first-child), 
-body.light .bluesec > div > div:not(:first-child) {
-  color: #2d3748;
-}
-
-body.light .greensec > div > div:not(:last-child) {
-  border-bottom: 1px solid #00ff9140;
-}
-
-body.light .bluesec > div > div:not(:last-child) {
-  border-bottom: 1px solid #0088a040;
-}
-
 body.light .scroll-container > section > div {
-  background: linear-gradient(to bottom, #ffffff00, #0088a015);
-  color: #0088a0;
+  background: linear-gradient(to bottom, #009bfba0, #009bfb);
 }
 
-body.light .scroll-container > section > div > a {
-  color: #0088a0;
-}
-
-body.light .scroll-container > section > div > div:nth-child(2n) {
-  color: #2d3748;
-}
