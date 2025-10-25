@@ -65,7 +65,7 @@ body {
   margin: 0;
 }
 .title-box {
-  background: linear-gradient(to bottom, #00d07680, #00ff9140);
+  background: linear-gradient(to bottom, #00d076bb, #00a791bb);
   border-radius: 25px;
   width: content-box;
   height: auto;
@@ -94,11 +94,11 @@ h2 {
   transition: transform 0.5s ease;
 }
 .green-block {
-  background: linear-gradient(to bottom, #00d07680, #00ff9140);
+  background: linear-gradient(to bottom, #00d076bb, #00a791bb);
   color: white
 }
 .blue-block {
-  background: linear-gradient(to bottom, #009bfb80, #009bfb40);
+  background: linear-gradient(to bottom, #0082d3bb, #0054dbbb);
   color: white;
 }
 .green-block:hover h2, .blue-block:hover h2 {
@@ -117,13 +117,13 @@ h2 {
   height: 15px;
 }
 .green-block::-webkit-scrollbar-thumb {
-  background: #00d076cc;
+  background: #ffffff80;
   border-radius: 25px;
   width: 50%;
   height: 15px;
 }
 .blue-block::-webkit-scrollbar-thumb {
-  background: #009bfbcc;
+  background: #ffffff80;
   border-radius: 25px;
   width: 50%;
   height: 15px;
@@ -158,7 +158,7 @@ h2 {
   transition: font-size 0.5s ease;
 }
 .scroll-container > section > div {
-  background: linear-gradient(to bottom, #009bfb80, #009bfb40);
+  background: linear-gradient(to bottom, #0082d3bb, #0054dbbb);
   color: white;
   width: 200px;
   height: 200px;
@@ -429,13 +429,13 @@ body.light {
   background-color: #c0ffe3;
 }
 body.light .title-box {
-  background: linear-gradient(to bottom, #00c972a0, #00c972);
+  background: linear-gradient(to bottom, #00c972, #00ae9a);
 }
 body.light .green-block {
-  background: linear-gradient(to bottom, #00c972a0, #00c972);
+  background: linear-gradient(to bottom, #00c972, #00ae9a);
 }
 body.light .blue-block {
-  background: linear-gradient(to bottom, #009bfba0, #009bfb);
+  background: linear-gradient(to bottom, #00b4eb, #3385ff);
 }
 body.light .green-block::-webkit-scrollbar {
   background: #ffffffa0;
@@ -447,9 +447,9 @@ body.light .green-block::-webkit-scrollbar-thumb {
   background: #00c97280;
 }
 body.light .blue-block::-webkit-scrollbar-thumb {
-  background: #009bfb80;
+  background: #00b4eb80;
 }
 body.light .scroll-container > section > div {
-  background: linear-gradient(to bottom, #009bfba0, #009bfb);
+  background: linear-gradient(to bottom, #00b4eb, #3385ff);
 }
 
