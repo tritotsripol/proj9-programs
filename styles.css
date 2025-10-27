@@ -47,9 +47,6 @@ h1 {
   padding: 1.5em;
   text-align:start;
   width: 100%;
-  position: relative;
-  bottom : 0;
-  left: 0;
   box-sizing: border-box;
   margin-top:auto;
   z-index: -1;
@@ -65,8 +62,9 @@ body {
   margin: 0;
 }
 .title-box {
-  background: linear-gradient(to bottom, #00d076bb, #00a791bb);
-  border-radius: 25px;
+  border: 1px solid #00d076;
+  background: linear-gradient(to bottom, #00d07640, #00d07620);
+  border-radius: 15px;
   width: content-box;
   height: auto;
   position: relative;
@@ -82,11 +80,9 @@ h2 {
   font-size: 36px; 
   position: sticky;
   left: 0;
-  letter-spacing: 0px;
-  transition: letter-spacing 0.5s ease;
 }
 .green-block, .blue-block {
-  border-radius: 25px;
+  border-radius: 15px;
   width: content-box;
   height: auto;
   padding:15px;
@@ -94,15 +90,14 @@ h2 {
   transition: transform 0.5s ease;
 }
 .green-block {
-  background: linear-gradient(to bottom, #00d076bb, #00a791bb);
+  border: 1px solid #00d076;
+  background: linear-gradient(to bottom, #00d07640, #00d07620);
   color: white
 }
 .blue-block {
-  background: linear-gradient(to bottom, #0082d3bb, #0054dbbb);
+  border: 1px solid #00c5d3;
+  background: linear-gradient(to bottom, #00c5d340, #00c5d320);
   color: white;
-}
-.green-block:hover h2, .blue-block:hover h2 {
-  letter-spacing: 5px;
 }
 .green-block::-webkit-scrollbar {
   background: #00d07640;
@@ -111,19 +106,19 @@ h2 {
   height: 15px;
 }
 .blue-block::-webkit-scrollbar {
-  background: #009bfb20;
+  background: #00c5d340;
   border-radius: 25px;
   width: 15px;
   height: 15px;
 }
 .green-block::-webkit-scrollbar-thumb {
-  background: #ffffff80;
+  background: #00d076;
   border-radius: 25px;
   width: 50%;
   height: 15px;
 }
 .blue-block::-webkit-scrollbar-thumb {
-  background: #ffffff80;
+  background: #00c5d3;
   border-radius: 25px;
   width: 50%;
   height: 15px;
@@ -140,7 +135,6 @@ h2 {
   grid-template-columns: repeat(4,auto);
 }
 .greensec > div > div:not(:first-child), .bluesec > div > div:not(:first-child) {
-  color: white;
   font-weight: 300;
 }
 .greensec > div > div, .bluesec > div > div {
@@ -158,11 +152,12 @@ h2 {
   transition: font-size 0.5s ease;
 }
 .scroll-container > section > div {
-  background: linear-gradient(to bottom, #0082d3bb, #0054dbbb);
+  border: 1px solid #00c5d3;
+  background: linear-gradient(to bottom, #00c5d340, #00c5d320);
   color: white;
   width: 200px;
   height: 200px;
-  border-radius: 25px;
+  border-radius: 15px;
   padding: 15px;
   position: relative;
   transition: width 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
@@ -195,7 +190,6 @@ h2 {
   font-weight: 300;
   font-size: 15px;
   margin-top: 15px;
-  color: white;
   transition: font-size 0.5s ease;
 }
 .scroll-container > section {
@@ -349,107 +343,123 @@ width: 15px;
 height: 15px;
 }
 body::-webkit-scrollbar-thumb {
-background: #00ff91cc;
+background: #00d076;
 border-radius: 25px;
 width: 50%;
 height: 15px;
 }
 
-  body.light::-webkit-scrollbar {
-    background: rgba(255,255,255, 0.5);
-  }
-  body.light::-webkit-scrollbar-thumb {
-    background: #00d07680;
-  }
-  
-  body.light .gotop, body.light .themebtn {
-    background-color: rgba(255,255,255,0.5);
-    border: solid 1px white;
-    box-shadow:0 0 5px #00c97280;
-    transition: background-color 1s ease, box-shadow 1s ease;
-  }
-  body.light .gotop:hover, body.light .themebtn:hover {
-    background-color: white;
-    box-shadow: 0 0 5px rgba(255,255,255, 1);
-  }
-  body.light .uppy, body.light .themeicon {
-    filter: invert(0);
-    opacity: 0.5;
-  }
-  body.light .sectionbtn {
-    background-color: rgba(255,255,255,0.5);
-    border: solid 1px white;
-    box-shadow:0 0 5px #00c97280;
-    transition: background-color 1s ease, color 1s ease, box-shadow 1s ease;
-  }
-  body.light .sectionbtn:hover {
-    background-color: white;
-    box-shadow: 0 0 5px rgba(255,255,255,1);
-  }
-  body.light select.sectionbtn {
-    color: rgba(0,0,0,0.5);
-  }
-  body.light select.sectionbtn:hover {
-    color: black;
-  }
-  body.light select.sectionbtn div {
-    color: black;
-  }
-  body.light select.sectionbtn option {
-    color: black;
-    background-color:white;
-  }
-  
-  body.light .header, body.light .footer {
-    background: #ffffff80;
-    color: #13364e;
-  }
-  body.light .home>a {
-    color: #13364e;
-  }
-  body.light .home > a{
-    color: #13364e;
-  }
-  body.light .home > a > button {
-    color: #13364e;
-    background: #ffffff80;
-    border: 1px solid white;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-  }
-  body.light .home > a > button:hover {
-    background: white;
-    box-shadow: 0 0 5px rgba(255,255,255, 1);
-  }
-  body.light .title-box {
-    color: white;
-  }
+/*light*/  
+body.light .gotop, body.light .themebtn {
+  background-color: rgba(255,255,255,0.5);
+  border: solid 1px white;
+  box-shadow:0 0 5px #00d07680;
+  transition: background-color 1s ease, box-shadow 1s ease;
+}
+body.light .gotop:hover, body.light .themebtn:hover {
+  background-color: white;
+  box-shadow: 0 0 5px rgba(255,255,255, 1);
+}
+body.light .uppy, body.light .themeicon {
+  filter: invert(0);
+  opacity: 0.5;
+}
+body.light .sectionbtn {
+  background-color: rgba(255,255,255,0.5);
+  border: solid 1px white;
+  box-shadow:0 0 5px #00d07680;
+  transition: background-color 1s ease, color 1s ease, box-shadow 1s ease;
+}
+body.light .sectionbtn:hover {
+  background-color: white;
+  box-shadow: 0 0 5px rgba(255,255,255,1);
+}
+body.light select.sectionbtn {
+  color: rgba(0,0,0,0.5);
+}
+body.light select.sectionbtn:hover {
+  color: black;
+}
+body.light select.sectionbtn div {
+  color: black;
+}
+body.light select.sectionbtn option {
+  color: black;
+  background-color:white;
+}
+
+body.light .header, body.light .footer {
+  background: #ffffff80;
+  color: #13364e;
+}
+body.light .home>a {
+  color: #13364e;
+}
+body.light .home > a{
+  color: #13364e;
+}
+body.light .home > a > button {
+  color: #13364e;
+  background: #ffffff80;
+  border: 1px solid white;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+body.light .home > a > button:hover {
+  background: white;
+  box-shadow: 0 0 5px rgba(255,255,255, 1);
+}
+body.light .title-box {
+  color: white;
+}
 
 /* Light */
 body.light {
   background-color: #c0ffe3;
 }
+body.light::-webkit-scrollbar {
+  background: #ffffff80;
+}
+body.light::-webkit-scrollbar-thumb {
+  background: #00d076;
+}
 body.light .title-box {
-  background: linear-gradient(to bottom, #00c972, #00ae9a);
+  color: #005037;
+  border: 1px solid #00d076;
+  background: linear-gradient(to bottom, #00d07640, #00d07620);
 }
 body.light .green-block {
-  background: linear-gradient(to bottom, #00c972, #00ae9a);
+  color: #005037;
+  border: 1px solid #00d076;
+  background: linear-gradient(to bottom, #00d07640, #00d07620);
 }
 body.light .blue-block {
-  background: linear-gradient(to bottom, #00b4eb, #3385ff);
+  color: #00555b;
+  border: 1px solid #00c5d3;
+  background: linear-gradient(to bottom, #00c5d340, #00c5d320);
 }
 body.light .green-block::-webkit-scrollbar {
-  background: #ffffffa0;
+  background: #00d07640;
 }
 body.light .blue-block::-webkit-scrollbar {
-  background: #ffffffa0;
+  background: #00c5d340;
 }
 body.light .green-block::-webkit-scrollbar-thumb {
-  background: #00c97280;
+  background: #00d076;
 }
 body.light .blue-block::-webkit-scrollbar-thumb {
-  background: #00b4eb80;
+  background: #00c5d3;
 }
 body.light .scroll-container > section > div {
-  background: linear-gradient(to bottom, #00b4eb, #3385ff);
+  color: #00555b;
+  border: 1px solid #00c5d3;
+  background: linear-gradient(to bottom, #00c5d340, #00c5d320);
 }
-
+body.light .scroll-container > section > div > a {
+  color: #00555b;
+}
+body.light .greensec > div > div{
+  border-bottom: 1px solid #00d07640;
+}
+body.light .bluesec > div > div {
+  border-bottom: 1px solid #00c5d340;
+}
